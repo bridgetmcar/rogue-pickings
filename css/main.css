@@ -60,13 +60,15 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
-	margin: 0 auto;
+  text-align: center;
+	/* margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
 .header-border{
@@ -184,7 +186,7 @@ header nav ul li a {
 }
 
 .section-one h4 {
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 
 .section-two {
@@ -242,8 +244,41 @@ footer span {
 
 @media all and (min-width:768px) {
   /* Tablet size here */
+
+  .bottom-section {
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+
+
+  }
+  .section-one,
+  .section-two,
+  .section-three {
+    width: 30%;
+    height: auto;
+    padding-right: 5px;
+
+    /* float: left; */
+  }
+.section-two{
+
+    border-right: 1px solid #eee;
+}
+.section-one{
+      border-right: 1px solid #eee;
+}
+
 }
 
 @media all and (min-width:1200px) {
   /* Destop styles here */
+header nav ul {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-between;
+}
+
 }
